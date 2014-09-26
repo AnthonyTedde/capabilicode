@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: capabilicode_development
+  username:  <%= ENV['db_username'] %>
+  password: <%= ENV['db_password'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,5 +83,3 @@ test:
 production:
   <<: *default
   database: capabilicode_production
-  username: capabilicode
-  password: <%= ENV['CAPABILICODE_DATABASE_PASSWORD'] %>
