@@ -28,6 +28,9 @@ gem 'devise'
 gem 'figaro'
 gem 'foreigner'
 gem 'bootstrap-sass', '3.2.0'
+group :development, :test do
+    gem 'rspec-rails'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
